@@ -21,6 +21,14 @@ const settings = {
 			type: 'array',
 			default: [],
 		},
+		backgroundColor: {
+			type: 'string',
+			default: '#262626',
+		},
+		textColor: {
+			type: 'string',
+			default: '#fff',
+		},
 	},
 	edit,
 	save,

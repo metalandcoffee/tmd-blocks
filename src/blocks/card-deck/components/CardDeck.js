@@ -1,4 +1,3 @@
-import classnames from 'classnames';
 import { group } from '@wordpress/icons';
 import { __ } from '@wordpress/i18n';
 import {
@@ -65,7 +64,7 @@ export class CardDeck extends Component {
 		setAttributes( properties );
 	}
 
-	addCard(e) {
+	addCard() {
 		const { setAttributes } = this.props;
 		let { cards } = this.props.attributes;
 		const { newCard } = this.state;
@@ -101,7 +100,6 @@ export class CardDeck extends Component {
 	}
 
 	updateCardContent(index, val) {
-		//console.log(`Updating card content ${index+1}.`);
 		const { setAttributes } = this.props;
 		let { cards } = this.props.attributes;
 		cards = cards.map( ( card, i ) => {
@@ -112,7 +110,6 @@ export class CardDeck extends Component {
 	}
 
 	updateCardTerm(index, val) {
-		//console.log(`Updating card caption ${index+1}.`);
 		const { setAttributes } = this.props;
 		let { cards } = this.props.attributes;
 		cards = cards.map( ( card, i ) => {
@@ -123,7 +120,6 @@ export class CardDeck extends Component {
 	}
 
 	updateCardTitle(index, val) {
-		//console.log(`Updating card small caption ${index+1}.`);
 		const { setAttributes } = this.props;
 		let { cards } = this.props.attributes;
 		cards = cards.map( ( card, i ) => {
@@ -136,7 +132,6 @@ export class CardDeck extends Component {
 	updateCardImage(val) {
 		const { setAttributes } = this.props;
 		const { activeCard } = this.state;
-		//console.log(`Updating card image ${activeCard+1}.`);
 		let { cards } = this.props.attributes;
 		cards = cards.map( ( card, i ) => {
 			return activeCard === i ? { ...card, image: val } : { ...card };
@@ -146,7 +141,6 @@ export class CardDeck extends Component {
 	}
 
 	updateCardLink(index, val) {
-		console.log(`Updating card link ${index+1}.`, val);
 		const { setAttributes } = this.props;
 		let { cards } = this.props.attributes;
 		cards = cards.map( ( card, i ) => {
@@ -166,12 +160,8 @@ export class CardDeck extends Component {
 			cardlimit,
 		} = this.state;
 
-		const classNames = classnames( className, {
-			'has-media-on-the-right': 'right' === false,
-		} );
-
 		return (
-			<div className={ classNames }>
+			<div className={ className }>
 				{ isSelected && (
 					<>
 						<MediaPlaceholder
@@ -180,7 +170,7 @@ export class CardDeck extends Component {
 							multiple = { false }
 							icon={ group }
 							labels={ {
-								title: 'Card deck',
+								title: 'Card Deck',
 								instructions: `Edit card below. Click "Add card" button to add an additional card (up to 3). Click "Upload" or "Media Library" on the currently selected card to add an image.`,
 							} }
 						>
@@ -193,20 +183,20 @@ export class CardDeck extends Component {
 									{ __( 'Add card' ) }
 								</Button>
 							) }	
-							<ul className="card-selector">
+							<ul className="mc-card-selector">
 								<li><span className="spacer" /></li>
 							{ cards.map( (tab, i) => {
 							return (
 								<li key={`mc-card-deck-btn-${i}`}>
 									<button
-										className="components-button is-secondary select-card"
+										className="components-button is-secondary mc-select-card"
 										type="button"
 										onClick={ () => this.focusCard( i ) }
 									>
 										{ `Card ${i+1}`}
 									</button>
 									<span
-										className="delete-card"
+										className="mc-delete-card"
 										onClick={ () => this.removeCard( i ) }
 									>
 										<Dashicon icon="no-alt" />
@@ -218,39 +208,39 @@ export class CardDeck extends Component {
 						</MediaPlaceholder>
 					</>
 				) }
-				<div className="card-deck">
+				<div className="mc-card-deck">
 				{ cards.map( ( card, i ) => {
 					return (
-						<div onClick={ () => this.focusCard( i ) } className={ isSelected && card.active ? `card active` : `card` } key={`mc-card-deck-${i}`}>
-							<div className="card-img-container">
+						<div onClick={ () => this.focusCard( i ) } className={ isSelected && card.active ? `mc-card active` : `mc-card` } key={`mc-card-deck-${i}`}>
+							<div className="mc-card__img-container">
 							{ `` !== card.image ? (
-								<img className="card-img-top" src={ card.image.url } alt="" scale="0" />
+								<img src={ card.image.url } alt="" />
 							) : `Add image...` }
 							</div>
-							<div className="card-body">
+							<div className="mc-card__body">
 								<RichText
 									tagName="div"
-									className="card-term"
+									className="mc-card__category"
 									
 									value={ card.term }
 									onChange={ ( val ) => this.updateCardTerm( i, val ) }
-									placeholder={ __( 'Add term...', 'mc-inc-blocks' ) }
+									placeholder={ __( 'Add category...', 'mc-blocks' ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 								<RichText
 									tagName="h3"
-									className="card-title"
+									className="mc-card__title"
 									value={ card.title }
 									onChange={ ( val ) => this.updateCardTitle( i, val ) }
-									placeholder={ __( 'Add title...', 'mc-inc-blocks' ) }
+									placeholder={ __( 'Add title...', 'mc-blocks' ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 								<RichText
 									tagName="div"
-									className="card-text"
+									className="mc-card__content"
 									value={ card.content }
 									onChange={ ( val ) => this.updateCardContent( i, val ) }
-									placeholder={ __( 'Add content...', 'mc-inc-blocks' ) }
+									placeholder={ __( 'Add content...', 'mc-blocks' ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 								{ isSelected && (
