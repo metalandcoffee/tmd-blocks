@@ -1,0 +1,17 @@
+// Variables.
+$large-laptop-width: 1440px;
+$laptop-width: 1024px;
+$ipad-width: 768px;
+
+// Mixins.
+@mixin large-laptop {
+	@media (min-width: #{$laptop-width}) and (max-width: #{$large-laptop-width}) {
+		@content;
+	}
+}
+
+@mixin laptop {
+	@media (min-width: #{$ipad-width}) and (max-width: #{$laptop-width}) {
+		@content;
+	}
+}
