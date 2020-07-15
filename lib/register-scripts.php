@@ -16,9 +16,9 @@ add_action( 'init', __NAMESPACE__ . '\register_scripts' );
  */
 function register_scripts() {
 	$block_path        = '/build/index.js';
-	$script_path       = '/lib/js/block.min.js';
-	$style_path        = '/lib/css/style.min.css';
-	$style_editor_path = '/lib/css/style-editor.min.css';
+	$script_path       = '/lib/js/block.js';
+	$style_path        = '/lib/css/style.css';
+	$style_editor_path = '/lib/css/style-editor.css';
 
 	$js_dependencies = [ 'wp-plugins', 'wp-element', 'wp-edit-post', 'wp-i18n', 'wp-api-request', 'wp-data', 'wp-hooks', 'wp-plugins', 'wp-components', 'wp-blocks', 'wp-editor', 'wp-compose' ];
 

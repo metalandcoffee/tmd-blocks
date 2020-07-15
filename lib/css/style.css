@@ -1,0 +1,9 @@
+.mc-card-deck {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(100px, 1fr) );
+    grid-gap: 10px;
+}
+
+.mc-card {
+    /* flex: 1 1 100%; */
+}
