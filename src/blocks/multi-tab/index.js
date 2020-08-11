@@ -3,6 +3,7 @@
  */
 import { __ } from '@wordpress/i18n';
 import { registerBlockType } from '@wordpress/blocks';
+import icon from './icon';
 
 /**
  * Internal dependencies
@@ -12,9 +13,9 @@ import save from './save';
 
 // Block settings.
 const settings = {
-	title: __( `Tabs`, `mc-blocks` ),
+	title: __( `Multi-Tab Content`, `tmd-blocks` ),
 	category: `formatting`,
-	icon: `category`,
+	icon,
 	keywords: [ `mc`, `tabs` ],
 	attributes: {
 		showTabs: {
@@ -151,4 +152,4 @@ const settings = {
 };
 
 // Register our block.
-export default registerBlockType( `mc-blocks/multi-tab`, settings );
+export default registerBlockType( `tmd-blocks/multi-tab`, settings );

@@ -6,4 +6,5 @@
 
 .mc-card {
     /* flex: 1 1 100%; */
+    padding: 10px;
 }

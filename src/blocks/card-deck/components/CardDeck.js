@@ -224,7 +224,7 @@ export class CardDeck extends Component {
 									
 									value={ card.term }
 									onChange={ ( val ) => this.updateCardTerm( i, val ) }
-									placeholder={ __( 'Add category...', 'mc-blocks' ) }
+									placeholder={ __( 'Add category...', 'tmd-blocks' ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 								<RichText
@@ -232,7 +232,7 @@ export class CardDeck extends Component {
 									className="mc-card__title"
 									value={ card.title }
 									onChange={ ( val ) => this.updateCardTitle( i, val ) }
-									placeholder={ __( 'Add title...', 'mc-blocks' ) }
+									placeholder={ __( 'Add title...', 'tmd-blocks' ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 								<RichText
@@ -240,7 +240,7 @@ export class CardDeck extends Component {
 									className="mc-card__content"
 									value={ card.content }
 									onChange={ ( val ) => this.updateCardContent( i, val ) }
-									placeholder={ __( 'Add content...', 'mc-blocks' ) }
+									placeholder={ __( 'Add content...', 'tmd-blocks' ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 								{ isSelected && (

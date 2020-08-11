@@ -1,10 +1,10 @@
 <?php
 /**
- * Plugin Name: Metal & Coffee Blocks
- * Description: Custom card deck block & multi-tab block.
- * Author: Ebonie Butler
- * Author URI: https://ebonie.me
- * Text Domain: metal-and-coffee-blocks
+ * Plugin Name: The Metalhead Dev Blocks
+ * Description: Gutenberg block suite that provides a card deck block & multi-tab content block.
+ * Author: The Metalhead Dev
+ * Author URI: https://themetalheaddev.com
+ * Text Domain: the-metalhead-dev-blocks
  * Version: 1.0.0
  *
  * @package MC\MCBlocks
@@ -33,7 +33,7 @@ if ( version_compare( '5.0', $GLOBALS['wp_version'], '>' ) ) {
 			'<div class="error"><p>%s</p></div>',
 			sprintf(
 				/* translators: %1$s is the required WP version, %2$s is the current version */
-				esc_html__( 'Metal & Coffee Blocks requires WordPress version %1$s or above. Your site is using WordPress version %2$s.', 'metal-and-coffee-blocks' ),
+				esc_html__( 'The Metalhead Dev Blocks requires WordPress version %1$s or above. Your site is using WordPress version %2$s.', 'the-metalhead-dev-blocks' ),
 				'5.0',
 				esc_html( $GLOBALS['wp_version'] )
 			)

@@ -24,7 +24,7 @@ function register_scripts() {
 
 	// Register the bundled editor block JS file.
 	wp_register_script(
-		'mc-blocks-js',
+		'tmd-blocks-js',
 		_get_plugin_url() . $block_path,
 		[ 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-editor' ],
 		filemtime( _get_plugin_directory() . $block_path ),
@@ -33,7 +33,7 @@ function register_scripts() {
 
 	// Register front-end block JS file.
 	wp_register_script(
-		'mc-blocks-front-end-js',
+		'tmd-blocks-front-end-js',
 		_get_plugin_url() . $script_path,
 		[ 'wp-i18n', 'wp-element', 'wp-blocks', 'wp-components', 'wp-editor' ],
 		filemtime( _get_plugin_directory() . $script_path ),
@@ -42,7 +42,7 @@ function register_scripts() {
 
 	// Register block styles CSS file on both editor and front-end.
 	wp_register_style(
-		'mc-blocks-css',
+		'tmd-blocks-css',
 		_get_plugin_url() . $style_path,
 		[],
 		filemtime( _get_plugin_directory() . $style_path )
@@ -50,7 +50,7 @@ function register_scripts() {
 
 	// Register block styles CSS file on editor only.
 	wp_register_style(
-		'mc-blocks-editor-css',
+		'tmd-blocks-editor-css',
 		_get_plugin_url() . $style_editor_path,
 		[],
 		filemtime( _get_plugin_directory() . $style_editor_path )

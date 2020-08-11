@@ -23,8 +23,8 @@ function register_blocks() {
 
 	// List all of the blocks for your plugin.
 	$blocks = [
-		'mc-blocks/multi-tab',
-		'mc-blocks/card-deck',
+		'tmd-blocks/multi-tab',
+		'tmd-blocks/card-deck',
 	];
 
 	// Register each block with same CSS and JS.
@@ -32,10 +32,10 @@ function register_blocks() {
 		register_block_type(
 			$block,
 			[
-				'script'        => 'mc-blocks-front-end-js',
-				'editor_script' => 'mc-blocks-js',
-				'style'         => 'mc-blocks-css',
-				'editor_style'  => 'mc-blocks-editor-css',
+				'script'        => 'tmd-blocks-front-end-js',
+				'editor_script' => 'tmd-blocks-js',
+				'style'         => 'tmd-blocks-css',
+				'editor_style'  => 'tmd-blocks-editor-css',
 			]
 		);
 	}

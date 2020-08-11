@@ -245,7 +245,7 @@ export class MultiTab extends Component {
 			<div className={ className }>
 				<BlockControls key="custom-controls">
 					<Toolbar>
-						<Tooltip text={ __( 'Add a tab.', 'mc-blocks' )  }>
+						<Tooltip text={ __( 'Add a tab.', 'tmd-blocks' )  }>
 							<Button onClick={ this.addTab }
 							>
 								<Dashicon icon="plus-alt" />
@@ -259,7 +259,7 @@ export class MultiTab extends Component {
 						className="header"
 						value={ header }
 						onChange={ ( val ) => this.onChange( `header`, val ) }
-						placeholder={ __( `Add header...`, `mc-blocks` ) }
+						placeholder={ __( `Add header...`, `tmd-blocks` ) }
 						keepPlaceholderOnFocus={ true }
 					/>
 				</div>
@@ -282,7 +282,7 @@ export class MultiTab extends Component {
 								className={ tabOneClasses }
 								value={ tab1 }
 								onChange={ ( val ) => this.onChange( `tab1`, val ) }
-								placeholder={ __( `Add tab...`, `mc-blocks` ) }
+								placeholder={ __( `Add tab...`, `tmd-blocks` ) }
 								keepPlaceholderOnFocus={ true }
 							/>
 						</li>
@@ -295,7 +295,7 @@ export class MultiTab extends Component {
 								className={ tabTwoClasses }
 								value={ tab2 }
 								onChange={ ( val ) => this.onChange( `tab2`, val ) }
-								placeholder={ __( `Add tab...`, `mc-blocks` ) }
+								placeholder={ __( `Add tab...`, `tmd-blocks` ) }
 								keepPlaceholderOnFocus={ true }
 							/>
 						</li>
@@ -309,7 +309,7 @@ export class MultiTab extends Component {
 									className={ tabThreeClasses }
 									value={ tab3 }
 									onChange={ ( val ) => this.onChange( `tab3`, val ) }
-									placeholder={ __( `Add tab...`, `mc-blocks` ) }
+									placeholder={ __( `Add tab...`, `tmd-blocks` ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 							</li>
@@ -324,7 +324,7 @@ export class MultiTab extends Component {
 									className={ tabFourClasses }
 									value={ tab4 }
 									onChange={ ( val ) => this.onChange( `tab4`, val ) }
-									placeholder={ __( `Add tab...`, `mc-blocks` ) }
+									placeholder={ __( `Add tab...`, `tmd-blocks` ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 							</li>
@@ -339,7 +339,7 @@ export class MultiTab extends Component {
 									className={ tabFiveClasses }
 									value={ tab5 }
 									onChange={ ( val ) => this.onChange( `tab5`, val ) }
-									placeholder={ __( `Add tab...`, `mc-blocks` ) }
+									placeholder={ __( `Add tab...`, `tmd-blocks` ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 							</li>
@@ -354,7 +354,7 @@ export class MultiTab extends Component {
 									className={ tabSixClasses }
 									value={ tab6 }
 									onChange={ ( val ) => this.onChange( `tab6`, val ) }
-									placeholder={ __( `Add tab...`, `mc-blocks` ) }
+									placeholder={ __( `Add tab...`, `tmd-blocks` ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 							</li>
@@ -369,7 +369,7 @@ export class MultiTab extends Component {
 									className={ tabSevenClasses }
 									value={ tab7 }
 									onChange={ ( val ) => this.onChange( `tab7`, val ) }
-									placeholder={ __( `Add tab...`, `mc-blocks` ) }
+									placeholder={ __( `Add tab...`, `tmd-blocks` ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 							</li>
@@ -384,7 +384,7 @@ export class MultiTab extends Component {
 									className={ tabEightClasses }
 									value={ tab8 }
 									onChange={ ( val ) => this.onChange( `tab8`, val ) }
-									placeholder={ __( `Add tab...`, `mc-blocks` ) }
+									placeholder={ __( `Add tab...`, `tmd-blocks` ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 							</li>
@@ -399,7 +399,7 @@ export class MultiTab extends Component {
 									className={ tabNineClasses }
 									value={ tab9 }
 									onChange={ ( val ) => this.onChange( `tab9`, val ) }
-									placeholder={ __( `Add tab...`, `mc-blocks` ) }
+									placeholder={ __( `Add tab...`, `tmd-blocks` ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 							</li>
@@ -414,7 +414,7 @@ export class MultiTab extends Component {
 									className={ tabTenClasses }
 									value={ tab10 }
 									onChange={ ( val ) => this.onChange( `tab10`, val ) }
-									placeholder={ __( `Add tab...`, `mc-blocks` ) }
+									placeholder={ __( `Add tab...`, `tmd-blocks` ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 							</li>
@@ -429,7 +429,7 @@ export class MultiTab extends Component {
 									className={ tabElevenClasses }
 									value={ tab11 }
 									onChange={ ( val ) => this.onChange( `tab11`, val ) }
-									placeholder={ __( `Add tab...`, `mc-blocks` ) }
+									placeholder={ __( `Add tab...`, `tmd-blocks` ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 							</li>
@@ -444,7 +444,7 @@ export class MultiTab extends Component {
 									className={ tabTwelveClasses }
 									value={ tab12 }
 									onChange={ ( val ) => this.onChange( `tab12`, val ) }
-									placeholder={ __( `Add tab...`, `mc-blocks` ) }
+									placeholder={ __( `Add tab...`, `tmd-blocks` ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 							</li>
@@ -457,7 +457,7 @@ export class MultiTab extends Component {
 									tagName="p"
 									value={ content1 }
 									onChange={ ( val ) => this.onChange( `content1`, val ) }
-									placeholder={ __( `Add content...`, `mc-blocks` ) }
+									placeholder={ __( `Add content...`, `tmd-blocks` ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 							</div>
@@ -468,7 +468,7 @@ export class MultiTab extends Component {
 									tagName="p"
 									value={ content2 }
 									onChange={ ( val ) => this.onChange( `content2`, val ) }
-									placeholder={ __( `Add content...`, `mc-blocks` ) }
+									placeholder={ __( `Add content...`, `tmd-blocks` ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 							</div>
@@ -479,7 +479,7 @@ export class MultiTab extends Component {
 									tagName="p"
 									value={ content3 }
 									onChange={ ( val ) => this.onChange( `content3`, val ) }
-									placeholder={ __( `Add content...`, `mc-blocks` ) }
+									placeholder={ __( `Add content...`, `tmd-blocks` ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 							</div>
@@ -490,7 +490,7 @@ export class MultiTab extends Component {
 									tagName="p"
 									value={ content4 }
 									onChange={ ( val ) => this.onChange( `content4`, val ) }
-									placeholder={ __( `Add content...`, `mc-blocks` ) }
+									placeholder={ __( `Add content...`, `tmd-blocks` ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 							</div>
@@ -501,7 +501,7 @@ export class MultiTab extends Component {
 									tagName="p"
 									value={ content5 }
 									onChange={ ( val ) => this.onChange( `content5`, val ) }
-									placeholder={ __( `Add content...`, `mc-blocks` ) }
+									placeholder={ __( `Add content...`, `tmd-blocks` ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 							</div>
@@ -512,7 +512,7 @@ export class MultiTab extends Component {
 									tagName="p"
 									value={ content6 }
 									onChange={ ( val ) => this.onChange( `content6`, val ) }
-									placeholder={ __( `Add content...`, `mc-blocks` ) }
+									placeholder={ __( `Add content...`, `tmd-blocks` ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 							</div>
@@ -523,7 +523,7 @@ export class MultiTab extends Component {
 									tagName="p"
 									value={ content7 }
 									onChange={ ( val ) => this.onChange( `content7`, val ) }
-									placeholder={ __( `Add content...`, `mc-blocks` ) }
+									placeholder={ __( `Add content...`, `tmd-blocks` ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 							</div>
@@ -534,7 +534,7 @@ export class MultiTab extends Component {
 									tagName="p"
 									value={ content8 }
 									onChange={ ( val ) => this.onChange( `content8`, val ) }
-									placeholder={ __( `Add content...`, `mc-blocks` ) }
+									placeholder={ __( `Add content...`, `tmd-blocks` ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 							</div>
@@ -545,7 +545,7 @@ export class MultiTab extends Component {
 									tagName="p"
 									value={ content9 }
 									onChange={ ( val ) => this.onChange( `content9`, val ) }
-									placeholder={ __( `Add content...`, `mc-blocks` ) }
+									placeholder={ __( `Add content...`, `tmd-blocks` ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 							</div>
@@ -556,7 +556,7 @@ export class MultiTab extends Component {
 									tagName="p"
 									value={ content10 }
 									onChange={ ( val ) => this.onChange( `content10`, val ) }
-									placeholder={ __( `Add content...`, `mc-blocks` ) }
+									placeholder={ __( `Add content...`, `tmd-blocks` ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 							</div>
@@ -567,7 +567,7 @@ export class MultiTab extends Component {
 									tagName="p"
 									value={ content11 }
 									onChange={ ( val ) => this.onChange( `content11`, val ) }
-									placeholder={ __( `Add content...`, `mc-blocks` ) }
+									placeholder={ __( `Add content...`, `tmd-blocks` ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 							</div>
@@ -578,7 +578,7 @@ export class MultiTab extends Component {
 									tagName="p"
 									value={ content12 }
 									onChange={ ( val ) => this.onChange( `content12`, val ) }
-									placeholder={ __( `Add content...`, `mc-blocks` ) }
+									placeholder={ __( `Add content...`, `tmd-blocks` ) }
 									keepPlaceholderOnFocus={ true }
 								/>
 							</div>

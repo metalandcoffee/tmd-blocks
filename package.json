@@ -1,5 +1,5 @@
 {
-  "name": "mc-blocks",
+  "name": "tmd-blocks",
   "version": "1.0.0",
   "description": "A suite of Gutenberg blocks provided by Metal and Coffee.",
   "main": "index.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/metalandcoffee/mc-blocks.git"
+    "url": "git+https://github.com/metalandcoffee/tmd-blocks.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/metalandcoffee/mc-blocks/issues"
+    "url": "https://github.com/metalandcoffee/tmd-blocks/issues"
   },
-  "homepage": "https://github.com/metalandcoffee/mc-blocks#readme",
+  "homepage": "https://github.com/metalandcoffee/tmd-blocks#readme",
   "devDependencies": {
     "@wordpress/scripts": "^7.2.0",
     "autoprefixer": "^9.7.3",

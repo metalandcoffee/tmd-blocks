@@ -3,6 +3,7 @@
  */
 import { __ } from '@wordpress/i18n';
 import { registerBlockType } from '@wordpress/blocks';
+import icon from './icon';
 
 /**
  * Internal dependencies
@@ -12,9 +13,9 @@ import save from './save';
 
 // Block settings.
 const settings = {
-	title: __( 'Card Deck', 'mc-blocks' ),
+	title: __( 'Card Deck', 'tmd-blocks' ),
 	category: 'formatting',
-	icon: 'admin-page',
+	icon,
 	keywords: [ 'mc', 'card', 'deck' ],
 	attributes: {
 		cards: {
@@ -35,4 +36,4 @@ const settings = {
 };
 
 // Register our block.
-export default registerBlockType( 'mc-blocks/card-deck', settings );
+export default registerBlockType( 'tmd-blocks/card-deck', settings );
